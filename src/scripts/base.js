@@ -4,11 +4,25 @@ console.log("Script initialized");
 const addButton = document.getElementById("add-note");
 const newNote = document.getElementById("new-note");
 
-const addNote = () => {
+const getNoteList = () => {
+    return new Promise((resolve, reject) => {
+        chrome.storage.sync.get("noteList", data => {
+            if (chrome.runtime.lastError) {
+                reject(chrome.runtime.lastError);
+            } else {
+                resolve(data.noteList || []);
+            }
+        });
+    });
+};
+
+const addNote = async() => {
     const note = newNote.value;
     console.log({note});
     if(note.length > 0){
-        chrome.storage.sync.set({note}, () => {
+        const retrievedNoteList = await getNoteList();
+        const noteList = [...retrievedNoteList, note];
+        chrome.storage.sync.set({noteList}, () => {
             console.log("Note saved");
         });
         newNote.value = "";
@@ -18,7 +32,7 @@ const addNote = () => {
 
 (() => { 
     addButton.addEventListener("click", addNote);
-    chrome.storage.sync.get("note", (data) => { 
+    chrome.storage.sync.get("noteList", (data) => { 
         console.log("Data received", data);
     })
 })();
