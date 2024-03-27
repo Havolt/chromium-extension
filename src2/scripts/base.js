@@ -29,10 +29,16 @@ const addNote = async() => {
     }
 };
 
+const createNotes = (noteList) => { 
+
+};
+
 
 (() => { 
     addButton.addEventListener("click", addNote);
-    chrome.storage.sync.get("noteList", (data) => { 
+    const noteList = chrome.storage.sync.get("noteList", (data) => { 
         console.log("Data received", data);
     })
+
+    createNotes(noteList);
 })();
