@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import './App.css'
+import './App.scss'
 
 function App() {
   const EXTENTIION_TITLE = 'Qutes'
@@ -8,14 +8,21 @@ function App() {
   const [notes, setNotes] = useState([])
 
   // Refs
-  const inputRef = useRef(null)
+  const noteTitleRef = useRef(null)
+  const noteDescRef = useRef(null)
 
   const handleNoteSubmit = (e) => { 
     e.preventDefault()
-    console.log(inputRef.current.value)
-    if (inputRef.current.value) {
-      setNotes([...notes, inputRef.current.value])
-      inputRef.current.value = ''
+
+    const note = {
+      title: noteTitleRef.current.value,
+      description: noteDescRef.current.value
+    }
+
+    if (noteTitleRef.current.value) {
+      setNotes([...notes, note])
+      noteTitleRef.current.value = ''
+      noteDescRef.current.value = ''
     }
   }
 
@@ -23,7 +30,14 @@ function App() {
     <>
       <h1>{EXTENTIION_TITLE}</h1>
       <form onSubmit={handleNoteSubmit} className="note-form">
-        <input ref={inputRef} type="text" />
+        <div>
+          <label htmlFor="note-title">Title</label>
+          <input ref={noteTitleRef} name='note-title' type="text" />
+        </div>
+        <div>
+          <label htmlFor="note-description">Description</label>
+          <textarea ref={noteDescRef} name='note-description'></textarea>
+        </div>
         <button>+</button>
       </form>
     </>
