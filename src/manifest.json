@@ -5,7 +5,7 @@
     "version": "0.1",
     "action": {
       "default_popup": "dist/index.html",
-      "default_icon": "hi.png"
+      "default_icon": "thumnail.png"
     },
     "permissions": [
       "storage"

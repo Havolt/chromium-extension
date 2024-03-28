@@ -13,7 +13,7 @@ export default defineConfig({
           dest: ''
         },
         {
-          src: 'hi.png',
+          src: 'public/thumbnail.png',
           dest: ''
         }
       ]
