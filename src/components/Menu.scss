@@ -1,10 +1,40 @@
 .menu {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    align-items: start;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	align-items: start;
+	width: 15rem;
+	
+	&:hover {
+		cursor: pointer;
+	}
 
-    &:hover {
-        cursor: pointer;
-    }
+	li {
+		width: 100%;
+		text-align: left;
+		text-transform: lowercase;
+		font-size: 2rem;
+		font-weight: 500;
+		text-indent: .8rem;;
+
+		&:first-letter {
+			text-transform: uppercase;
+		}
+
+		&:nth-child(odd) {
+			background-color: #303030;
+
+			&:hover {
+				background-color: #2e2e2e;
+			}
+		}
+
+		&:nth-child(even) {
+			background-color: #363636;
+
+			&:hover {
+				background-color: #2e2e2e;
+			}
+		}
+	}
 }

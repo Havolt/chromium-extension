@@ -1,0 +1,54 @@
+{
+    "stretches": [
+        {
+            "id": 1,
+            "name": "Lying abductor stretch",
+            "description": "Lie down on your side then brace yourself using your hand \n Bring your outer leg up and plant your foot on the ground with your toes facing away from you\n Lean your hips into the extended leg to get a good stretch in the TFL\n Hold for 30 seconds\n Switch sides\n Repeat 2-3 reps"
+        },
+        {
+            "id": 2,
+            "name": "Hip Circles Stretch",
+            "description": "Stand with feet hip width apart placing your hands on your hips\n Slowly move your hips in a circular motion completing full circles\n Repeat for desired reps then switch directions. Try increasing the diameter of the circles as you progress\n Complete 2-3 sets of 10 reps in each direction"
+        },
+        {
+            "id": 3,
+            "name": "Lying Leg Hanging Stretch",
+            "description": "Lie down on a bench or the edge of a bed on your side\n Support your head with your hand, lower your upper leg over the side of the bench/bed\n Hold this position for 30-60 seconds\n Switch sides\n Repeat for 2-3 times"
+        },
+        {
+            "id": 4,
+            "name": "Standing Balance Outer Hip Stretch",
+            "description": "Stand with feet hip width apart\n Bring up one leg and bend your knee, holding your ankle. You can use one hand to hold your ankle and the other to hold onto something for added stability.\n Slowly lean towards the side of your lifted leg to stretch the TFL\n Hold for up 30 seconds\n Switch sides\n Repeat 2-3 times"
+        },
+        {
+            "id": 5,
+            "name": "Standing Leg Cross Abductor Stretch",
+            "description": "Stand with feet hip width apart\n Bring one leg behind you crossing past your front foot. You can use the wall or another prop for extra stability.\n Lean your weight through the leg crossed behind, driving your hips forward\n Hold this stretch for 30-60 seconds\n Switch sides\n Repeat 2-3 times"
+        },
+        {
+            "id": 6,
+            "name": "Leaning Abductor Stretch",
+            "description": "Stand with feet close together next to a wall\n Place your hand on the wall to brace yourself\n Lean your weight towards your outer hip\n Hold this position for 30-60 seconds\n Switch sides\n Repeat 2-3 times"
+        },
+        {
+            "id": 7,
+            "name": "Cross Over Kneeling Hip Flexor Stretch",
+            "description": "Stand with feet hip width apart\n Get into lunge position by taking a step forward with one leg then lower down until your front leg’s thigh is parallel with the floor\n Lean forward while rotating towards your front leg\n Hold this position for 30-60 seconds\n Switch sides\n Repeat 2-3 times"
+        },
+        {
+            "id": 8,
+            "name": "Iron Cross Stretch",
+            "description": "Lie down on your back and bring your arms out to your sides\n Lift one leg over placing your leg on the opposite side of your body\n Try keeping your pelvis forward and lower back on the ground\n Hold this position for 30-60 seconds\n Switch sides\n Repeat 2-3 times"
+        },
+        {
+            "id": 9,
+            "name": "Static Standing TFL Stretch",
+            "description": "Stand in a staggered stance with the foot behind pointing outwards and rotating your hip at 45 degrees\n Contract your glutes driving your weight forward until you feel a stretch\n Reach up across and back with your arm on the stretching side\n Hold for 30 seconds\n Switch sides\n Repeat 2-3 times"
+        },
+        {
+            "id": 10,
+            "name": "Quadruped Active TFL Stretch",
+            "description": "Get down on the ground with hands stacked under the shoulders and knees under the hips\n Extend one leg behind you by contracting the glutes\n Externally rotate the hip pointing your toes out at 45 degrees\n Keeping a neutral spine adduct the hip\n Hold for up to 30 seconds\n Switch sides\n Repeat 2-3 times"
+        }
+    ]
+}

@@ -2,14 +2,13 @@ import { useState } from 'react'
 import './App.scss'
 import Menu from './components/Menu'
 import Notes from './components/Notes'
+import Stretches from './components/Stretches'
 
 
 const SECTIONS = {
 	NOTES: 'notes',
 	STRETCHES: 'stretches',
 }
-
-
 
 function App() {
 	const [currentSection, setCurrentSection] = useState(null)
@@ -22,7 +21,7 @@ function App() {
 		<div id="app">
 			{ !currentSection && <Menu sections={SECTIONS} updateSection={updateSection} /> }
 			{ currentSection === SECTIONS.NOTES && <Notes /> }
-			{ currentSection === SECTIONS.STRETCHES && <h1>Stretches</h1> }
+			{ currentSection === SECTIONS.STRETCHES && <Stretches />}
 		</div>
 	)
 }
