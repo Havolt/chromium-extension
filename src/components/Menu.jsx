@@ -1,4 +1,5 @@
 import React from 'react'
+import './Menu.scss'
 
 function Menu({ sections, updateSection }) {
 
@@ -6,15 +7,15 @@ function Menu({ sections, updateSection }) {
       updateSection(section)
    }
    return (
-      <div>
-         <ul>
+      <nav>
+         <ul className="menu">
             {
                sections && Object.keys(sections).map((section, index) => (
-                  section !== 'MENU' && <li key={index} onClick={() => handleSectionChange(sections[section])}>{section}</li>
+                  <li key={index} onClick={() => handleSectionChange(sections[section])}>{section}</li>
                ))
             }
          </ul>
-      </div>
+      </nav>
    )
 }
 

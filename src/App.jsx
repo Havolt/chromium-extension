@@ -5,7 +5,6 @@ import Notes from './components/Notes'
 
 
 const SECTIONS = {
-	MENU: 'menu',
 	NOTES: 'notes',
 	STRETCHES: 'stretches',
 }
@@ -13,18 +12,18 @@ const SECTIONS = {
 
 
 function App() {
-	const [currentSection, setCurrentSection] = useState(SECTIONS.MENU)
+	const [currentSection, setCurrentSection] = useState(null)
 
 	const updateSection = (section) => {
 		setCurrentSection(section)
 	}
 
 	return (
-		<>
-			{currentSection === SECTIONS.MENU && <Menu sections={SECTIONS} updateSection={updateSection} />}
-			{currentSection === SECTIONS.NOTES && <Notes />}
-			{currentSection === SECTIONS.STRETCHES && <h1>Stretches</h1>}
-		</>
+		<div id="app">
+			{ !currentSection && <Menu sections={SECTIONS} updateSection={updateSection} /> }
+			{ currentSection === SECTIONS.NOTES && <Notes /> }
+			{ currentSection === SECTIONS.STRETCHES && <h1>Stretches</h1> }
+		</div>
 	)
 }
 

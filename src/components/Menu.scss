@@ -1,0 +1,10 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: start;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
