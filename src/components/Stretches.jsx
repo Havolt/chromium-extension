@@ -1,8 +1,16 @@
-import React from 'react'
+import {useState} from 'react'
+import { stretches } from '../json/stretches'
 
 function Stretches() {
+  const [stretchesData, setStretchesData] = useState(stretches.map(stretch => ({ ...stretch, completed: false })))
   return (
-    <div>Stretches</div>
+    <div>
+      <ul>
+        { stretchesData.map((stretch, index) => (
+          <li key={index}>{ stretch.name}</li>
+        ))}
+      </ul>
+    </div>
   )
 }
 
